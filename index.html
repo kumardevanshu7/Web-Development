@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body style="font-family: Arial">
+    <main>
+      <!-- Using Some Entities -->
+      <h2>Entities : Example</h2>
+      <h1>This is head &lt;h1&gt;</h1>
+
+      <hr />
+
+      <!-- Using Table Structure & also using Colspan and rowspan-->
+      <h2>Table Rowspan and Colspan with Table Structure : Examples </h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Spends</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tush</td>
+            <td rowspan="3">17</td>
+            <!-- use rowspan in starting otherwise it will not merge correctly -->
+            <td>20</td>
+          </tr>
+          <tr>
+            <!-- Now you can see we write only 2 data fills because rowspan takes 3 Rows in Above -->
+            <td>Dev</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Ravi</td>
+            <td>30</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="2">Sums:</th>
+            <td>100</td>
+          </tr>
+        </tfoot>
+      </table>
+      <hr>
+    </main>
+  </body>
+</html>
