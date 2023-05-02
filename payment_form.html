@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <form>
+      <h1>Payment Form:</h1>
+      <h2>
+        Contact Details
+        <small
+          ><small
+            ><small>(Required Fields are followed by *)</small></small
+          ></small
+        >
+      </h2>
+      <p>Name: * <input type="text" name="name" required /></p>
+      <fieldset>
+        <legend>Gender *</legend>
+        <p>
+          Male <input type="radio" name="gender" id="" required /> Female
+          <input type="radio" name="gender" id="" required />
+        </p>
+      </fieldset>
+      <p>
+        <b>Address</b>
+        <textarea name="Address" id="Address" rows="5" cols="90"></textarea>
+      </p>
+      <p>
+        <b>Email: *</b> <input type="email" name="email" id="email" required />
+      </p>
+      <p>
+        <b>PINCODE:*</b>
+        <input type="number" name="pincode" id="pincode" required />
+      </p>
+      <hr />
+
+      <fieldset>
+        <legend>
+          <h2>
+            Payment Information
+            <small
+              ><small
+                ><small>(Required Fields are followed by *)</small></small
+              ></small
+            >
+          </h2>
+        </legend>
+        <p>
+          Card Type: *
+          <select name="cards_name" id="cards_name" required>
+            <option value="">--Select your Card--</option>
+            <option value="Kotak Bank">Kotak Bank</option>
+            <option value="Axis Bank">Axis Bank</option>
+            <option value="SBI Bank">SBI Bank</option>
+            <option value="ZJ Bank">ZJ Bank</option>
+          </select>
+        </p>
+        <p>
+          Card Number: *
+          <input type="number" name="card_no" id="card_no" required />
+        </p>
+        <p>
+          Expiration Date: *
+          <input type="date" name="expiry_date" id="expiry_date" required />
+        </p>
+        <p>
+          CVV: * <input type="password" name="cvv" id="cvv" required />
+        </p>
+        
+      </fieldset>
+      <br />
+      <input type="submit" value="Pay Now" />
+    </form>
+  </body>
+</html>
