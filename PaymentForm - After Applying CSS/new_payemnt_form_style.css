@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 15px 30px;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+textarea,
+select,
+fieldset {
+  width: 100%;
+  padding: 7px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 12px;
+}
+
+fieldset {
+  background-color: white;
+}
+
+.main_heading {
+  text-align: center;
+}
+
+input[type="submit"] {
+  background-color: #90ee90;
+  padding: 12px 20px;
+  border: 2px solid greenyellow;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 17%;
+  font-size: large;
+  float:left;
+ 
+}
+
+#main{
+    text-align: left;
+}
+
+form {
+  text-align: center;
+  overflow: hidden;
+}
+
+input[type="submit"]:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
+form p, legend{
+    text-align: left;
+}
+
+.card {
+    height: 50px;
+    width: 85px;
+    border: 2px solid black;
+    margin-right: 20px;
+    float: left;
+}
+
+img {
+    height: 50px;
+    width: 85px;
+}

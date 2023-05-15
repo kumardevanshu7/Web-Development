@@ -1,0 +1,132 @@
+<!-- Now here we modified our previous Payment Form with the help of CSS -->
+
+<!-- You can copy all below codes and paste it on Notepad or Code Editor (VS Code) and save the file with extension .html and for style - save the file with extension .css to understand the All Tags and Elements which i used! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/new_payemnt_form_style.css" />
+    <title>New Payment Form</title>
+  </head>
+  <body>
+    <form class="container">
+      <h1 class="main_heading">Payment Form:</h1>
+      <hr />
+      <h2 id="main">
+        Contact Details
+        <small
+          ><small
+            ><small>(Required Fields are followed by *)</small></small
+          ></small
+        >
+      </h2>
+      <br />
+      <p>
+        <b>Name: * </b
+        ><input
+          type="text"
+          name="name"
+          required
+          placeholder="enter your name"
+        />
+      </p>
+      <fieldset>
+        <legend>Gender *</legend>
+        <p>
+          Male <input type="radio" name="gender" id="" required /> Female
+          <input type="radio" name="gender" id="" required />
+        </p>
+      </fieldset>
+      <p><b>Address:</b></p>
+      <p>
+        <textarea
+          name="Address"
+          id="Address"
+          rows="5"
+          cols="90"
+          placeholder="enter your address"
+        ></textarea>
+      </p>
+      <p>
+        <b>Email: *</b>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="zainab30@gmail.com"
+          required
+        />
+      </p>
+      <p>
+        <b>PINCODE:*</b>
+        <input
+          type="number"
+          name="pincode"
+          id="pincode"
+          placeholder="123456"
+          required
+        />
+      </p>
+      <hr />
+
+      <h2 id="main">
+        Payment Information
+        <small
+          ><small
+            ><small>(Required Fields are followed by *)</small></small
+          ></small
+        >
+      </h2>
+      <br />
+
+      <p><b>Accepted Cards:</b></p>
+
+      <div class="card"><img src="/img/visa.png" alt="" /></div>
+      <div class="card"><img src="/img/mastercard.png" alt="" /></div>
+      <div class="card"><img src="/img/american.png" alt="" /></div>
+      <div class="card"><img src="/img/discover.png" alt="" /></div>
+      <div class="card"><img src="/img/gpay.png" alt="" /></div>
+      <div class="card"><img src="/img/skrill.png" alt="" /></div>
+      <div class="card"><img src="/img/paypal.png" alt="" /></div>
+
+      <br />
+      <br />
+      <br />
+
+      <p>
+        <b>Card Type: *</b>
+        <select name="cards_name" id="cards_name" required>
+          <option value="">--Select your Card--</option>
+          <option value="Kotak Bank">Kotak Bank</option>
+          <option value="Axis Bank">Axis Bank</option>
+          <option value="SBI Bank">SBI Bank</option>
+          <option value="ZJ Bank">ZJ Bank</option>
+        </select>
+      </p>
+      <p>
+        <b>Card Number: *</b>
+        <input
+          type="number"
+          name="card_no"
+          id="card_no"
+          placeholder="1111-2222-3333-4444"
+          required
+        />
+      </p>
+      <p>
+        <b>Expiration Date: *</b>
+        <input type="date" name="expiry_date" id="expiry_date" required />
+      </p>
+      <p>
+        <b>CVV: *</b>
+        <input type="password" name="cvv" id="cvv" placeholder="123" required />
+      </p>
+
+      <br />
+      <input type="submit" value="Pay Now" />
+    </form>
+  </body>
+</html>
